@@ -1,0 +1,11 @@
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\bin\Debug\pad_deklaracja.exe.config
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\bin\Debug\pad_deklaracja.exe
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\bin\Debug\pad_deklaracja.pdb
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.csproj.AssemblyReference.cache
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.csproj.SuggestedBindingRedirects.cache
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.Form1.resources
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.Properties.Resources.resources
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.csproj.GenerateResource.cache
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.csproj.CoreCompileInputs.cache
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.exe
+C:\Users\student\Source\Repos\coinflipgaming\pad_deklaracja\pad_deklaracja\obj\Debug\pad_deklaracja.pdb

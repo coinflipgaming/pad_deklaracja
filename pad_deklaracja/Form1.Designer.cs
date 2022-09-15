@@ -31,43 +31,43 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.in_pesel = new System.Windows.Forms.MaskedTextBox();
-            this.in_date_of_birth = new System.Windows.Forms.MaskedTextBox();
-            this.in_place_of_birth = new System.Windows.Forms.TextBox();
-            this.in_names = new System.Windows.Forms.TextBox();
-            this.in_surname = new System.Windows.Forms.TextBox();
+            this.in_data_ur = new System.Windows.Forms.MaskedTextBox();
+            this.in_miejsce_ur = new System.Windows.Forms.TextBox();
+            this.in_imiona = new System.Windows.Forms.TextBox();
+            this.in_nazwisko = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.in_mail_code = new System.Windows.Forms.MaskedTextBox();
+            this.in_kod_pocztowy = new System.Windows.Forms.MaskedTextBox();
             this.in_email = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.in_mail = new System.Windows.Forms.TextBox();
-            this.in_phone_number = new System.Windows.Forms.TextBox();
-            this.in_adress = new System.Windows.Forms.TextBox();
-            this.in_city = new System.Windows.Forms.TextBox();
+            this.in_poczta_miasto = new System.Windows.Forms.TextBox();
+            this.in_numer_tel = new System.Windows.Forms.TextBox();
+            this.in_adres = new System.Windows.Forms.TextBox();
+            this.in_miasto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.terms = new System.Windows.Forms.ComboBox();
-            this.in_specification1 = new System.Windows.Forms.RadioButton();
-            this.in_specification2 = new System.Windows.Forms.RadioButton();
-            this.tests_list = new System.Windows.Forms.ComboBox();
+            this.terminy = new System.Windows.Forms.ComboBox();
+            this.in_kwalifikacja1 = new System.Windows.Forms.RadioButton();
+            this.in_kwalifikacja2 = new System.Windows.Forms.RadioButton();
+            this.lista_kwalifikacji_zawodowych = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.in_radiobutton2 = new System.Windows.Forms.RadioButton();
             this.in_radiobutton1 = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.in_czypraktyczne = new System.Windows.Forms.CheckBox();
+            this.in_czypisemne = new System.Windows.Forms.CheckBox();
             this.accept = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.declaration = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,10 +87,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.in_pesel);
-            this.groupBox1.Controls.Add(this.in_date_of_birth);
-            this.groupBox1.Controls.Add(this.in_place_of_birth);
-            this.groupBox1.Controls.Add(this.in_names);
-            this.groupBox1.Controls.Add(this.in_surname);
+            this.groupBox1.Controls.Add(this.in_data_ur);
+            this.groupBox1.Controls.Add(this.in_miejsce_ur);
+            this.groupBox1.Controls.Add(this.in_imiona);
+            this.groupBox1.Controls.Add(this.in_nazwisko);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -112,38 +112,38 @@
             this.in_pesel.TabIndex = 10;
             this.in_pesel.ValidatingType = typeof(int);
             // 
-            // in_date_of_birth
+            // in_data_ur
             // 
-            this.in_date_of_birth.Location = new System.Drawing.Point(187, 81);
-            this.in_date_of_birth.Mask = "00/00/0000";
-            this.in_date_of_birth.Name = "in_date_of_birth";
-            this.in_date_of_birth.Size = new System.Drawing.Size(74, 20);
-            this.in_date_of_birth.TabIndex = 9;
-            this.in_date_of_birth.ValidatingType = typeof(System.DateTime);
+            this.in_data_ur.Location = new System.Drawing.Point(187, 81);
+            this.in_data_ur.Mask = "00/00/0000";
+            this.in_data_ur.Name = "in_data_ur";
+            this.in_data_ur.Size = new System.Drawing.Size(74, 20);
+            this.in_data_ur.TabIndex = 9;
+            this.in_data_ur.ValidatingType = typeof(System.DateTime);
             // 
-            // in_place_of_birth
+            // in_miejsce_ur
             // 
-            this.in_place_of_birth.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.in_place_of_birth.Location = new System.Drawing.Point(297, 81);
-            this.in_place_of_birth.Name = "in_place_of_birth";
-            this.in_place_of_birth.Size = new System.Drawing.Size(266, 20);
-            this.in_place_of_birth.TabIndex = 8;
+            this.in_miejsce_ur.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.in_miejsce_ur.Location = new System.Drawing.Point(297, 81);
+            this.in_miejsce_ur.Name = "in_miejsce_ur";
+            this.in_miejsce_ur.Size = new System.Drawing.Size(266, 20);
+            this.in_miejsce_ur.TabIndex = 8;
             // 
-            // in_names
+            // in_imiona
             // 
-            this.in_names.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.in_names.Location = new System.Drawing.Point(186, 51);
-            this.in_names.Name = "in_names";
-            this.in_names.Size = new System.Drawing.Size(377, 20);
-            this.in_names.TabIndex = 5;
+            this.in_imiona.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.in_imiona.Location = new System.Drawing.Point(186, 51);
+            this.in_imiona.Name = "in_imiona";
+            this.in_imiona.Size = new System.Drawing.Size(377, 20);
+            this.in_imiona.TabIndex = 5;
             // 
-            // in_surname
+            // in_nazwisko
             // 
-            this.in_surname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.in_surname.Location = new System.Drawing.Point(186, 21);
-            this.in_surname.Name = "in_surname";
-            this.in_surname.Size = new System.Drawing.Size(377, 20);
-            this.in_surname.TabIndex = 4;
+            this.in_nazwisko.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.in_nazwisko.Location = new System.Drawing.Point(186, 21);
+            this.in_nazwisko.Name = "in_nazwisko";
+            this.in_nazwisko.Size = new System.Drawing.Size(377, 20);
+            this.in_nazwisko.TabIndex = 4;
             // 
             // label5
             // 
@@ -185,23 +185,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nazwisko:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(592, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 579);
-            this.textBox1.TabIndex = 3;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.in_mail_code);
+            this.groupBox2.Controls.Add(this.in_kod_pocztowy);
             this.groupBox2.Controls.Add(this.in_email);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.in_mail);
-            this.groupBox2.Controls.Add(this.in_phone_number);
-            this.groupBox2.Controls.Add(this.in_adress);
-            this.groupBox2.Controls.Add(this.in_city);
+            this.groupBox2.Controls.Add(this.in_poczta_miasto);
+            this.groupBox2.Controls.Add(this.in_numer_tel);
+            this.groupBox2.Controls.Add(this.in_adres);
+            this.groupBox2.Controls.Add(this.in_miasto);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
@@ -214,14 +206,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dane osobowe ucznia";
             // 
-            // in_mail_code
+            // in_kod_pocztowy
             // 
-            this.in_mail_code.Location = new System.Drawing.Point(186, 81);
-            this.in_mail_code.Mask = "00-000";
-            this.in_mail_code.Name = "in_mail_code";
-            this.in_mail_code.Size = new System.Drawing.Size(55, 20);
-            this.in_mail_code.TabIndex = 11;
-            this.in_mail_code.ValidatingType = typeof(int);
+            this.in_kod_pocztowy.Location = new System.Drawing.Point(186, 81);
+            this.in_kod_pocztowy.Mask = "00-000";
+            this.in_kod_pocztowy.Name = "in_kod_pocztowy";
+            this.in_kod_pocztowy.Size = new System.Drawing.Size(55, 20);
+            this.in_kod_pocztowy.TabIndex = 11;
+            this.in_kod_pocztowy.ValidatingType = typeof(int);
             // 
             // in_email
             // 
@@ -240,36 +232,36 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "mail:";
             // 
-            // in_mail
+            // in_poczta_miasto
             // 
-            this.in_mail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.in_mail.Location = new System.Drawing.Point(268, 81);
-            this.in_mail.Name = "in_mail";
-            this.in_mail.Size = new System.Drawing.Size(294, 20);
-            this.in_mail.TabIndex = 8;
+            this.in_poczta_miasto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.in_poczta_miasto.Location = new System.Drawing.Point(268, 81);
+            this.in_poczta_miasto.Name = "in_poczta_miasto";
+            this.in_poczta_miasto.Size = new System.Drawing.Size(294, 20);
+            this.in_poczta_miasto.TabIndex = 8;
             // 
-            // in_phone_number
+            // in_numer_tel
             // 
-            this.in_phone_number.AllowDrop = true;
-            this.in_phone_number.Location = new System.Drawing.Point(186, 110);
-            this.in_phone_number.MaxLength = 11;
-            this.in_phone_number.Name = "in_phone_number";
-            this.in_phone_number.Size = new System.Drawing.Size(130, 20);
-            this.in_phone_number.TabIndex = 7;
+            this.in_numer_tel.AllowDrop = true;
+            this.in_numer_tel.Location = new System.Drawing.Point(186, 110);
+            this.in_numer_tel.MaxLength = 11;
+            this.in_numer_tel.Name = "in_numer_tel";
+            this.in_numer_tel.Size = new System.Drawing.Size(130, 20);
+            this.in_numer_tel.TabIndex = 7;
             // 
-            // in_adress
+            // in_adres
             // 
-            this.in_adress.Location = new System.Drawing.Point(186, 51);
-            this.in_adress.Name = "in_adress";
-            this.in_adress.Size = new System.Drawing.Size(377, 20);
-            this.in_adress.TabIndex = 5;
+            this.in_adres.Location = new System.Drawing.Point(186, 51);
+            this.in_adres.Name = "in_adres";
+            this.in_adres.Size = new System.Drawing.Size(377, 20);
+            this.in_adres.TabIndex = 5;
             // 
-            // in_city
+            // in_miasto
             // 
-            this.in_city.Location = new System.Drawing.Point(186, 21);
-            this.in_city.Name = "in_city";
-            this.in_city.Size = new System.Drawing.Size(377, 20);
-            this.in_city.TabIndex = 4;
+            this.in_miasto.Location = new System.Drawing.Point(186, 21);
+            this.in_miasto.Name = "in_miasto";
+            this.in_miasto.Size = new System.Drawing.Size(377, 20);
+            this.in_miasto.TabIndex = 4;
             // 
             // label6
             // 
@@ -287,9 +279,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(30, 113);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 13);
+            this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 2;
-            this.label7.Text = "nr telefonu z kierunkowym:";
+            this.label7.Text = "nr telefonu:";
             // 
             // label8
             // 
@@ -331,54 +323,55 @@
             this.label12.TabIndex = 11;
             this.label12.Text = "przeprowadzanego w terminie";
             // 
-            // terms
+            // terminy
             // 
-            this.terms.FormattingEnabled = true;
-            this.terms.Items.AddRange(new object[] {
+            this.terminy.FormattingEnabled = true;
+            this.terminy.Items.AddRange(new object[] {
             "styczeń",
             "czerwiec"});
-            this.terms.Location = new System.Drawing.Point(328, 427);
-            this.terms.Name = "terms";
-            this.terms.Size = new System.Drawing.Size(121, 21);
-            this.terms.TabIndex = 12;
-            this.terms.Text = "styczeń";
+            this.terminy.Location = new System.Drawing.Point(328, 427);
+            this.terminy.Name = "terminy";
+            this.terminy.Size = new System.Drawing.Size(121, 21);
+            this.terminy.TabIndex = 12;
+            this.terminy.Text = "styczeń";
             // 
-            // in_specification1
+            // in_kwalifikacja1
             // 
-            this.in_specification1.AutoSize = true;
-            this.in_specification1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.in_specification1.Location = new System.Drawing.Point(129, 473);
-            this.in_specification1.Name = "in_specification1";
-            this.in_specification1.Size = new System.Drawing.Size(129, 17);
-            this.in_specification1.TabIndex = 13;
-            this.in_specification1.TabStop = true;
-            this.in_specification1.Text = "technik informatyk";
-            this.in_specification1.UseVisualStyleBackColor = true;
+            this.in_kwalifikacja1.AutoSize = true;
+            this.in_kwalifikacja1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.in_kwalifikacja1.Location = new System.Drawing.Point(129, 473);
+            this.in_kwalifikacja1.Name = "in_kwalifikacja1";
+            this.in_kwalifikacja1.Size = new System.Drawing.Size(129, 17);
+            this.in_kwalifikacja1.TabIndex = 13;
+            this.in_kwalifikacja1.TabStop = true;
+            this.in_kwalifikacja1.Text = "technik informatyk";
+            this.in_kwalifikacja1.UseVisualStyleBackColor = true;
+            this.in_kwalifikacja1.CheckedChanged += new System.EventHandler(this.in_kwalifikacja1_CheckedChanged);
             // 
-            // in_specification2
+            // in_kwalifikacja2
             // 
-            this.in_specification2.AutoSize = true;
-            this.in_specification2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.in_specification2.Location = new System.Drawing.Point(327, 473);
-            this.in_specification2.Name = "in_specification2";
-            this.in_specification2.Size = new System.Drawing.Size(136, 17);
-            this.in_specification2.TabIndex = 14;
-            this.in_specification2.TabStop = true;
-            this.in_specification2.Text = "technik programista";
-            this.in_specification2.UseVisualStyleBackColor = true;
+            this.in_kwalifikacja2.AutoSize = true;
+            this.in_kwalifikacja2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.in_kwalifikacja2.Location = new System.Drawing.Point(327, 473);
+            this.in_kwalifikacja2.Name = "in_kwalifikacja2";
+            this.in_kwalifikacja2.Size = new System.Drawing.Size(136, 17);
+            this.in_kwalifikacja2.TabIndex = 14;
+            this.in_kwalifikacja2.TabStop = true;
+            this.in_kwalifikacja2.Text = "technik programista";
+            this.in_kwalifikacja2.UseVisualStyleBackColor = true;
+            this.in_kwalifikacja2.CheckedChanged += new System.EventHandler(this.in_kwalifikacja2_CheckedChanged);
             // 
-            // tests_list
+            // lista_kwalifikacji_zawodowych
             // 
-            this.tests_list.FormattingEnabled = true;
-            this.tests_list.Items.AddRange(new object[] {
-            "",
+            this.lista_kwalifikacji_zawodowych.FormattingEnabled = true;
+            this.lista_kwalifikacji_zawodowych.Items.AddRange(new object[] {
             "INF.02",
             "INF.03",
             "INF.04"});
-            this.tests_list.Location = new System.Drawing.Point(32, 513);
-            this.tests_list.Name = "tests_list";
-            this.tests_list.Size = new System.Drawing.Size(121, 21);
-            this.tests_list.TabIndex = 16;
+            this.lista_kwalifikacji_zawodowych.Location = new System.Drawing.Point(32, 513);
+            this.lista_kwalifikacji_zawodowych.Name = "lista_kwalifikacji_zawodowych";
+            this.lista_kwalifikacji_zawodowych.Size = new System.Drawing.Size(121, 21);
+            this.lista_kwalifikacji_zawodowych.TabIndex = 16;
             // 
             // panel2
             // 
@@ -413,32 +406,32 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.checkBox2);
-            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Controls.Add(this.in_czypraktyczne);
+            this.panel3.Controls.Add(this.in_czypisemne);
             this.panel3.Location = new System.Drawing.Point(327, 550);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(259, 41);
             this.panel3.TabIndex = 20;
             // 
-            // checkBox2
+            // in_czypraktyczne
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(145, 13);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "praktycznej";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.in_czypraktyczne.AutoSize = true;
+            this.in_czypraktyczne.Location = new System.Drawing.Point(145, 13);
+            this.in_czypraktyczne.Name = "in_czypraktyczne";
+            this.in_czypraktyczne.Size = new System.Drawing.Size(80, 17);
+            this.in_czypraktyczne.TabIndex = 1;
+            this.in_czypraktyczne.Text = "praktycznej";
+            this.in_czypraktyczne.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // in_czypisemne
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(13, 12);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(67, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "pisemnej";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.in_czypisemne.AutoSize = true;
+            this.in_czypisemne.Location = new System.Drawing.Point(13, 12);
+            this.in_czypisemne.Name = "in_czypisemne";
+            this.in_czypisemne.Size = new System.Drawing.Size(67, 17);
+            this.in_czypisemne.TabIndex = 0;
+            this.in_czypisemne.Text = "pisemnej";
+            this.in_czypisemne.UseVisualStyleBackColor = true;
             // 
             // accept
             // 
@@ -449,6 +442,7 @@
             this.accept.TabIndex = 21;
             this.accept.Text = "Zatwierdź";
             this.accept.UseVisualStyleBackColor = true;
+            this.accept.Click += new System.EventHandler(this.accept_Click);
             // 
             // clear
             // 
@@ -480,25 +474,33 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Projektowanie, programowanie i testowanie aplikacji.";
             // 
+            // declaration
+            // 
+            this.declaration.Location = new System.Drawing.Point(592, 49);
+            this.declaration.Name = "declaration";
+            this.declaration.Size = new System.Drawing.Size(450, 542);
+            this.declaration.TabIndex = 25;
+            this.declaration.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1054, 631);
+            this.Controls.Add(this.declaration);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.in_specification2);
-            this.Controls.Add(this.in_specification1);
+            this.Controls.Add(this.in_kwalifikacja2);
+            this.Controls.Add(this.in_kwalifikacja1);
             this.Controls.Add(this.save);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.accept);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.tests_list);
-            this.Controls.Add(this.terms);
+            this.Controls.Add(this.lista_kwalifikacji_zawodowych);
+            this.Controls.Add(this.terminy);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -524,39 +526,39 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MaskedTextBox in_pesel;
-        private System.Windows.Forms.MaskedTextBox in_date_of_birth;
+        private System.Windows.Forms.MaskedTextBox in_data_ur;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox in_email;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox in_phone_number;
-        private System.Windows.Forms.TextBox in_adress;
-        private System.Windows.Forms.TextBox in_city;
+        private System.Windows.Forms.TextBox in_numer_tel;
+        private System.Windows.Forms.TextBox in_adres;
+        private System.Windows.Forms.TextBox in_miasto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox terms;
-        private System.Windows.Forms.RadioButton in_specification1;
-        private System.Windows.Forms.RadioButton in_specification2;
-        private System.Windows.Forms.TextBox in_place_of_birth;
-        private System.Windows.Forms.TextBox in_names;
-        private System.Windows.Forms.TextBox in_surname;
-        private System.Windows.Forms.MaskedTextBox in_mail_code;
-        private System.Windows.Forms.TextBox in_mail;
-        private System.Windows.Forms.ComboBox tests_list;
+        private System.Windows.Forms.ComboBox terminy;
+        private System.Windows.Forms.RadioButton in_kwalifikacja1;
+        private System.Windows.Forms.RadioButton in_kwalifikacja2;
+        private System.Windows.Forms.TextBox in_miejsce_ur;
+        private System.Windows.Forms.TextBox in_imiona;
+        private System.Windows.Forms.TextBox in_nazwisko;
+        private System.Windows.Forms.MaskedTextBox in_kod_pocztowy;
+        private System.Windows.Forms.TextBox in_poczta_miasto;
+        private System.Windows.Forms.ComboBox lista_kwalifikacji_zawodowych;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton in_radiobutton2;
         private System.Windows.Forms.RadioButton in_radiobutton1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox in_czypraktyczne;
+        private System.Windows.Forms.CheckBox in_czypisemne;
         private System.Windows.Forms.Button accept;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.RichTextBox declaration;
     }
 }
