@@ -390,8 +390,9 @@
             this.in_radiobutton2.Size = new System.Drawing.Size(138, 17);
             this.in_radiobutton2.TabIndex = 1;
             this.in_radiobutton2.TabStop = true;
-            this.in_radiobutton2.Text = "po raz kolejny do części";
+            this.in_radiobutton2.Text = "po raz kolejny";
             this.in_radiobutton2.UseVisualStyleBackColor = true;
+            this.in_radiobutton2.CheckedChanged += new System.EventHandler(this.in_radiobutton2_CheckedChanged);
             // 
             // in_radiobutton1
             // 
@@ -403,6 +404,7 @@
             this.in_radiobutton1.TabStop = true;
             this.in_radiobutton1.Text = "po raz pierwszy";
             this.in_radiobutton1.UseVisualStyleBackColor = true;
+            this.in_radiobutton2.CheckedChanged += new System.EventHandler(this.in_radiobutton1_CheckedChanged);
             // 
             // panel3
             // 
@@ -422,6 +424,7 @@
             this.in_czypraktyczne.TabIndex = 1;
             this.in_czypraktyczne.Text = "praktycznej";
             this.in_czypraktyczne.UseVisualStyleBackColor = true;
+            this.in_czypraktyczne.CheckedChanged += new System.EventHandler(this.in_czypraktyczne_CheckedChanged);
             // 
             // in_czypisemne
             // 
@@ -432,6 +435,8 @@
             this.in_czypisemne.TabIndex = 0;
             this.in_czypisemne.Text = "pisemnej";
             this.in_czypisemne.UseVisualStyleBackColor = true;
+            this.in_czypisemne.CheckedChanged += new System.EventHandler(this.in_czypisemne_CheckedChanged);
+            // 
             // 
             // accept
             // 
