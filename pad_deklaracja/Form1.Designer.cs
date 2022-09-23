@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.in_pesel = new System.Windows.Forms.MaskedTextBox();
@@ -66,7 +67,7 @@
             this.accept = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
+            this.opis_kwalifikacji = new System.Windows.Forms.Label();
             this.declaration = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -86,6 +87,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.in_pesel);
             this.groupBox1.Controls.Add(this.in_data_ur);
             this.groupBox1.Controls.Add(this.in_miejsce_ur);
@@ -144,6 +146,7 @@
             this.in_nazwisko.Name = "in_nazwisko";
             this.in_nazwisko.Size = new System.Drawing.Size(377, 20);
             this.in_nazwisko.TabIndex = 4;
+            this.in_nazwisko.WordWrap = false;
             // 
             // label5
             // 
@@ -187,6 +190,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.in_kod_pocztowy);
             this.groupBox2.Controls.Add(this.in_email);
             this.groupBox2.Controls.Add(this.label10);
@@ -306,6 +310,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label11.Location = new System.Drawing.Point(85, 397);
             this.label11.Name = "label11";
@@ -316,6 +321,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(85, 430);
             this.label12.Name = "label12";
@@ -351,6 +357,7 @@
             // in_kwalifikacja2
             // 
             this.in_kwalifikacja2.AutoSize = true;
+            this.in_kwalifikacja2.BackColor = System.Drawing.Color.Transparent;
             this.in_kwalifikacja2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.in_kwalifikacja2.Location = new System.Drawing.Point(327, 473);
             this.in_kwalifikacja2.Name = "in_kwalifikacja2";
@@ -358,7 +365,7 @@
             this.in_kwalifikacja2.TabIndex = 14;
             this.in_kwalifikacja2.TabStop = true;
             this.in_kwalifikacja2.Text = "technik programista";
-            this.in_kwalifikacja2.UseVisualStyleBackColor = true;
+            this.in_kwalifikacja2.UseVisualStyleBackColor = false;
             this.in_kwalifikacja2.CheckedChanged += new System.EventHandler(this.in_kwalifikacja2_CheckedChanged);
             // 
             // lista_kwalifikacji_zawodowych
@@ -375,6 +382,8 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Controls.Add(this.in_radiobutton2);
             this.panel2.Controls.Add(this.in_radiobutton1);
             this.panel2.Location = new System.Drawing.Point(32, 550);
@@ -387,12 +396,12 @@
             this.in_radiobutton2.AutoSize = true;
             this.in_radiobutton2.Location = new System.Drawing.Point(127, 12);
             this.in_radiobutton2.Name = "in_radiobutton2";
-            this.in_radiobutton2.Size = new System.Drawing.Size(138, 17);
+            this.in_radiobutton2.Size = new System.Drawing.Size(90, 17);
             this.in_radiobutton2.TabIndex = 1;
             this.in_radiobutton2.TabStop = true;
             this.in_radiobutton2.Text = "po raz kolejny";
             this.in_radiobutton2.UseVisualStyleBackColor = true;
-            this.in_radiobutton2.CheckedChanged += new System.EventHandler(this.in_radiobutton2_CheckedChanged);
+            this.in_radiobutton2.CheckedChanged += new System.EventHandler(this.in_radiobutton1_CheckedChanged);
             // 
             // in_radiobutton1
             // 
@@ -404,10 +413,10 @@
             this.in_radiobutton1.TabStop = true;
             this.in_radiobutton1.Text = "po raz pierwszy";
             this.in_radiobutton1.UseVisualStyleBackColor = true;
-            this.in_radiobutton2.CheckedChanged += new System.EventHandler(this.in_radiobutton1_CheckedChanged);
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.in_czypraktyczne);
             this.panel3.Controls.Add(this.in_czypisemne);
             this.panel3.Location = new System.Drawing.Point(327, 550);
@@ -436,7 +445,6 @@
             this.in_czypisemne.Text = "pisemnej";
             this.in_czypisemne.UseVisualStyleBackColor = true;
             this.in_czypisemne.CheckedChanged += new System.EventHandler(this.in_czypisemne_CheckedChanged);
-            // 
             // 
             // accept
             // 
@@ -469,18 +477,20 @@
             this.save.Text = "Zapisz";
             this.save.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // opis_kwalifikacji
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(159, 516);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(307, 13);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Projektowanie, programowanie i testowanie aplikacji.";
+            this.opis_kwalifikacji.AutoSize = true;
+            this.opis_kwalifikacji.BackColor = System.Drawing.Color.Transparent;
+            this.opis_kwalifikacji.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.opis_kwalifikacji.Location = new System.Drawing.Point(159, 516);
+            this.opis_kwalifikacji.Name = "opis_kwalifikacji";
+            this.opis_kwalifikacji.Size = new System.Drawing.Size(307, 13);
+            this.opis_kwalifikacji.TabIndex = 24;
+            this.opis_kwalifikacji.Text = "Projektowanie, programowanie i testowanie aplikacji.";
             // 
             // declaration
             // 
+            this.declaration.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.declaration.Location = new System.Drawing.Point(592, 49);
             this.declaration.Name = "declaration";
             this.declaration.Size = new System.Drawing.Size(450, 542);
@@ -491,9 +501,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1054, 631);
             this.Controls.Add(this.declaration);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.opis_kwalifikacji);
             this.Controls.Add(this.in_kwalifikacja2);
             this.Controls.Add(this.in_kwalifikacja1);
             this.Controls.Add(this.save);
@@ -508,8 +521,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Deklaracja";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -563,7 +579,7 @@
         private System.Windows.Forms.Button accept;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button save;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label opis_kwalifikacji;
         private System.Windows.Forms.RichTextBox declaration;
     }
 }
