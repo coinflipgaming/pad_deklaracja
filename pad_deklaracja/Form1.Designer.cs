@@ -34,7 +34,7 @@
             this.in_pesel = new System.Windows.Forms.MaskedTextBox();
             this.in_data_ur = new System.Windows.Forms.MaskedTextBox();
             this.in_miejsce_ur = new System.Windows.Forms.TextBox();
-            this.in_imiona = new System.Windows.Forms.TextBox();
+            this.in_imie = new System.Windows.Forms.TextBox();
             this.in_nazwisko = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@
             this.groupBox1.Controls.Add(this.in_pesel);
             this.groupBox1.Controls.Add(this.in_data_ur);
             this.groupBox1.Controls.Add(this.in_miejsce_ur);
-            this.groupBox1.Controls.Add(this.in_imiona);
+            this.groupBox1.Controls.Add(this.in_imie);
             this.groupBox1.Controls.Add(this.in_nazwisko);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -125,23 +125,20 @@
             // 
             // in_miejsce_ur
             // 
-            this.in_miejsce_ur.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.in_miejsce_ur.Location = new System.Drawing.Point(297, 81);
             this.in_miejsce_ur.Name = "in_miejsce_ur";
             this.in_miejsce_ur.Size = new System.Drawing.Size(266, 20);
             this.in_miejsce_ur.TabIndex = 8;
             // 
-            // in_imiona
+            // in_imie
             // 
-            this.in_imiona.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.in_imiona.Location = new System.Drawing.Point(186, 51);
-            this.in_imiona.Name = "in_imiona";
-            this.in_imiona.Size = new System.Drawing.Size(377, 20);
-            this.in_imiona.TabIndex = 5;
+            this.in_imie.Location = new System.Drawing.Point(186, 51);
+            this.in_imie.Name = "in_imie";
+            this.in_imie.Size = new System.Drawing.Size(377, 20);
+            this.in_imie.TabIndex = 5;
             // 
             // in_nazwisko
             // 
-            this.in_nazwisko.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.in_nazwisko.Location = new System.Drawing.Point(186, 21);
             this.in_nazwisko.Name = "in_nazwisko";
             this.in_nazwisko.Size = new System.Drawing.Size(377, 20);
@@ -462,7 +459,7 @@
             this.clear.TabIndex = 22;
             this.clear.Text = "Wyczyść";
             this.clear.UseVisualStyleBackColor = true;
-            this.clear.Click += new System.EventHandler(this.clear_Click);
+            this.clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // save
             // 
@@ -561,7 +558,7 @@
         private System.Windows.Forms.RadioButton in_kwalifikacja1;
         private System.Windows.Forms.RadioButton in_kwalifikacja2;
         private System.Windows.Forms.TextBox in_miejsce_ur;
-        private System.Windows.Forms.TextBox in_imiona;
+        private System.Windows.Forms.TextBox in_imie;
         private System.Windows.Forms.TextBox in_nazwisko;
         private System.Windows.Forms.MaskedTextBox in_kod_pocztowy;
         private System.Windows.Forms.TextBox in_poczta_miasto;
