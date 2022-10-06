@@ -371,10 +371,6 @@
             // lista_kwalifikacji_zawodowych
             // 
             this.lista_kwalifikacji_zawodowych.FormattingEnabled = true;
-            this.lista_kwalifikacji_zawodowych.Items.AddRange(new object[] {
-            "INF.02",
-            "INF.03",
-            "INF.04"});
             this.lista_kwalifikacji_zawodowych.Location = new System.Drawing.Point(32, 513);
             this.lista_kwalifikacji_zawodowych.Name = "lista_kwalifikacji_zawodowych";
             this.lista_kwalifikacji_zawodowych.Size = new System.Drawing.Size(121, 21);
@@ -466,6 +462,7 @@
             this.clear.TabIndex = 22;
             this.clear.Text = "Wyczyść";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // save
             // 
@@ -501,9 +498,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1054, 631);
             this.Controls.Add(this.declaration);
             this.Controls.Add(this.opis_kwalifikacji);
@@ -525,7 +522,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Deklaracja";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
